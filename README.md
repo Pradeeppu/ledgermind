@@ -112,6 +112,12 @@ python -m streamlit run app.py     # http://localhost:8501
 
 Without `HINDSIGHT_URL`, the app runs on a small local memory, so it still works offline. The sidebar shows which backend is active.
 
+### Host it on Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Pradeeppu/ledgermind)
+
+[`render.yaml`](render.yaml) is a Render Blueprint. It installs the requirements, runs [`scripts/bootstrap.py`](scripts/bootstrap.py), and serves Streamlit on Render's port. The bootstrap script seeds the demo data on first boot, because the free-plan disk is wiped on each deploy. To use Hindsight, set `HINDSIGHT_URL` and `HINDSIGHT_API_KEY` in the service's environment. Free instances sleep when idle, so the first visit after a pause takes about a minute.
+
 | Command | What it does |
 |---|---|
 | `python -m pytest -q` | Unit tests for the match and risk rules |

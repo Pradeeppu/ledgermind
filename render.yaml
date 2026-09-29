@@ -1,0 +1,24 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+# Deploy: Render dashboard -> New -> Blueprint -> pick this repo (or use the "Deploy to Render" button in README).
+services:
+  - type: web
+    name: ledgermind
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    # seed demo data on first boot (the free-plan disk is ephemeral), then serve Streamlit on Render's port
+    startCommand: >-
+      python scripts/bootstrap.py &&
+      python -m streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+      --server.headless true --server.runOnSave false --browser.gatherUsageStats false
+    healthCheckPath: /_stcore/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: HINDSIGHT_URL        # e.g. the Hindsight Cloud API URL; leave empty to run on local memory
+        sync: false
+      - key: HINDSIGHT_API_KEY
+        sync: false
+      - key: LEDGERMIND_BANK_ID
+        value: ap-ledgermind-acme
