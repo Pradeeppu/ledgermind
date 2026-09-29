@@ -57,6 +57,7 @@ def main() -> None:
     ap.add_argument("--reflect", action="store_true", help="call Hindsight reflect for every historical invoice")
     ap.add_argument("--live-from", default="2026-09-15")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--verbose-csr", action="store_true", help="print every scholarship payout decision")
     args = ap.parse_args()
 
     mem = get_memory()
@@ -100,6 +101,12 @@ def main() -> None:
         print(f"[{n:3}/{len(invs)}] {inv['date']} {inv['number']:10} {d['outcome']:8} truth={truth['outcome']:8} "
               f"{','.join(f['code'] for f in d['risk_flags']) or '-'}")
     print(f"\nreplayed {len(invs)} invoices in {time.time() - t0:.0f}s; overrides={overrides}; wrong auto-approvals={wrong_auto}")
+
+    from ledgermind.csr import replay as csr_replay
+    t1 = time.time()
+    cs = csr_replay.run(mem, verbose=args.verbose_csr)
+    print(f"replayed {cs['payouts']} scholarship payouts in {time.time() - t1:.0f}s; auto-released={cs['auto']} "
+          f"accountant-handled={cs['human']} wrong auto-releases={cs['wrong_auto']}")
     for w in service.learning_curve():
         print(f"{w['week']} {w['from']}..{w['to']} n={w['invoices']:3} human={w['intervention_rate']:.0%} "
               f"exceptions={w['exceptions_caught']} protected=Rs.{w['value_protected']:,.0f}")

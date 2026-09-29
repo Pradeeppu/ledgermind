@@ -144,7 +144,8 @@ def set_rule_status(rule_id: str, status: str) -> dict:
 def learning_curve(buckets: int = 8) -> list[dict]:
     firsts = db.first_decisions_on()
     invs = db.invoices()
-    decided = sorted((invs[i] for i in firsts if i in invs), key=lambda i: (i["date"], i["id"]))
+    decided = sorted((invs[i] for i in firsts if i in invs and invs[i]["date"] < config.DEMO_LIVE_FROM),
+                     key=lambda i: (i["date"], i["id"]))  # the replayed history only; live demo invoices excluded
     if not decided:
         return []
     size = max(1, -(-len(decided) // buckets))

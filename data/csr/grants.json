@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G1",
+    "donor_id": "D1",
+    "date": "2025-07-01",
+    "amount": 1200000,
+    "program": "Engineering"
+  },
+  {
+    "id": "G2",
+    "donor_id": "D2",
+    "date": "2025-07-15",
+    "amount": 1000000,
+    "program": "Medicine"
+  },
+  {
+    "id": "G3",
+    "donor_id": "D3",
+    "date": "2025-08-01",
+    "amount": 600000,
+    "program": "General"
+  },
+  {
+    "id": "G4",
+    "donor_id": "D1",
+    "date": "2026-07-01",
+    "amount": 1200000,
+    "program": "Engineering"
+  },
+  {
+    "id": "G5",
+    "donor_id": "D2",
+    "date": "2026-07-10",
+    "amount": 600000,
+    "program": "Medicine"
+  },
+  {
+    "id": "G6",
+    "donor_id": "D3",
+    "date": "2026-08-01",
+    "amount": 500000,
+    "program": "General"
+  }
+]

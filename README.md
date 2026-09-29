@@ -54,6 +54,24 @@ To be clear about the headline: overall accuracy is only modestly higher (**77.9
 
 ![Learning curve](docs/screenshots/dashboard.png)
 
+## Second use case: CSR scholarships
+
+Corporate CSR budgets fund a scholarship foundation. Engineering students receive ₹40,000–45,000 a year and medical students ₹50,000. CSR heads rarely see where the money went, and a single changed bank account can send a scholarship to the wrong person. LedgerMind remembers every **student** and every **bank**, the same way it remembers vendors:
+
+- **CSR fund overview:** every donor rupee traced, donor → programme → student → bank reference. It shows what's left for next cycle and has a one-click utilisation report (CSV).
+- **Scholarship payouts:** each payout gets **Release / Hold / Escalate**. The checks are: an unverified bank change, one account shared by two students, a previous transfer that bounced, a duplicate payout in the same cycle, an amount above entitlement, a discontinued student, and a first payout (penny-drop check). Exceptions the accountant has approved before, such as an account held by a parent, are learned.
+- **Transaction tracker:** every transfer from In transit → Credited, Delayed, Failed or Returned, with a timeline. It learns each bank's normal crediting time, so a slow co-operative bank isn't a false "delayed" alarm.
+- **WhatsApp alerts:** students get messages when a payout is released, credited, delayed or failed. Bank-change questions go only to the **registered number on file**. A YES verifies the account; a NO blocks the payout as fraud and is remembered. Messages are simulated by default; live sending works through the WhatsApp Business Cloud API.
+- **Accountant workload:** each accountant's queue, holds, turnaround time, and failed transfers to chase.
+
+| Scholarship payouts (12 live, 7 of them risky) | Memory OFF | Memory ON |
+|---|---|---|
+| Decided correctly | 50% | **100%** |
+| Risky payouts wrongly released | 5 | **0** |
+| Transfers flagged as delayed | 4 | **1** (the real one) |
+
+All of these numbers come from `scripts/evaluate.py`. The foundation, donors and students are fictional.
+
 ## How Hindsight is used
 
 | Hindsight feature | How LedgerMind uses it |

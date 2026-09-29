@@ -1,0 +1,3402 @@
+[
+  {
+    "id": "P0004",
+    "student_id": "S04",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0711316",
+    "account": "****7955",
+    "holder": "Karthik Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0008",
+    "student_id": "S08",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0548363",
+    "account": "****2028",
+    "holder": "Vikram Sharma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0012",
+    "student_id": "S12",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0141111",
+    "account": "****7850",
+    "holder": "Ramachandra Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "Account is in the father's name (Ramachandra); verified with the college ID and a letter from the parent. OK to release."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0016",
+    "student_id": "S16",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0222783",
+    "account": "****6685",
+    "holder": "Harish Iyer",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0020",
+    "student_id": "S20",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0343224",
+    "account": "****7233",
+    "holder": "Irfan Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0024",
+    "student_id": "S24",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0765100",
+    "account": "****7428",
+    "holder": "Ganesh Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0028",
+    "student_id": "S28",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0597183",
+    "account": "****7164",
+    "holder": "Tejas Naidu",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0032",
+    "student_id": "S32",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0195431",
+    "account": "****9899",
+    "holder": "Ajay Gowda",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0036",
+    "student_id": "S36",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0129294",
+    "account": "****9480",
+    "holder": "Pradeep Nair",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0040",
+    "student_id": "S40",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-20",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0188896",
+    "account": "****1031",
+    "holder": "Imran Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0001",
+    "student_id": "S01",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0961168",
+    "account": "****6305",
+    "holder": "Anjali Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0005",
+    "student_id": "S05",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0239643",
+    "account": "****2013",
+    "holder": "Sneha Verma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0009",
+    "student_id": "S09",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0932967",
+    "account": "****6146",
+    "holder": "Lakshmi Menon",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0013",
+    "student_id": "S13",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0620801",
+    "account": "****2271",
+    "holder": "Meghana Reddy",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0017",
+    "student_id": "S17",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0517225",
+    "account": "****9088",
+    "holder": "Priyanka Pillai",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0021",
+    "student_id": "S21",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0395625",
+    "account": "****4822",
+    "holder": "Deepa Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0025",
+    "student_id": "S25",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0270187",
+    "account": "****7560",
+    "holder": "Bhavana Shetty",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0029",
+    "student_id": "S29",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0427000",
+    "account": "****3012",
+    "holder": "Fathima Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0033",
+    "student_id": "S33",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0658463",
+    "account": "****5278",
+    "holder": "Madhuri Hegde",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0037",
+    "student_id": "S37",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0461004",
+    "account": "****5577",
+    "holder": "Asha Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0041",
+    "student_id": "S47",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-21",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0207764",
+    "account": "****3146",
+    "holder": "Chaitra Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0002",
+    "student_id": "S02",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0325127",
+    "account": "****9779",
+    "holder": "Rahul Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0006",
+    "student_id": "S06",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0423466",
+    "account": "****5744",
+    "holder": "Arjun Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0010",
+    "student_id": "S10",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0619167",
+    "account": "****3945",
+    "holder": "Rohan Naidu",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0014",
+    "student_id": "S14",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0168157",
+    "account": "****8474",
+    "holder": "Aditya Gowda",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0018",
+    "student_id": "S18",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0676129",
+    "account": "****7405",
+    "holder": "Manoj Nair",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0022",
+    "student_id": "S22",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0693851",
+    "account": "****1067",
+    "holder": "Santosh Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0026",
+    "student_id": "S26",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0258612",
+    "account": "****2801",
+    "holder": "Naveen Sharma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 7,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0030",
+    "student_id": "S30",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0601871",
+    "account": "****2407",
+    "holder": "Ravi Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0034",
+    "student_id": "S34",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0950931",
+    "account": "****9873",
+    "holder": "Sai Iyer",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0038",
+    "student_id": "S38",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0207119",
+    "account": "****8327",
+    "holder": "Nikhil Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 7,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0042",
+    "student_id": "S48",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-22",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0966286",
+    "account": "****9627",
+    "holder": "Mohan Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0003",
+    "student_id": "S03",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0195119",
+    "account": "****1614",
+    "holder": "Divya Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0007",
+    "student_id": "S07",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0846702",
+    "account": "****3961",
+    "holder": "Pooja Shetty",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0011",
+    "student_id": "S11",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0636800",
+    "account": "****6627",
+    "holder": "Kavya Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0015",
+    "student_id": "S15",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0801133",
+    "account": "****1994",
+    "holder": "Nandini Hegde",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0019",
+    "student_id": "S19",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0476198",
+    "account": "****5552",
+    "holder": "Swathi Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0023",
+    "student_id": "S23",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0936630",
+    "account": "****6220",
+    "holder": "Ayesha Verma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 5,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0027",
+    "student_id": "S27",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0318054",
+    "account": "****9791",
+    "holder": "Shruti Menon",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0031",
+    "student_id": "S31",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0253723",
+    "account": "****3645",
+    "holder": "Keerthi Reddy",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0035",
+    "student_id": "S35",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0309629",
+    "account": "****4197",
+    "holder": "Lavanya Pillai",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0039",
+    "student_id": "S39",
+    "cycle": "C1",
+    "scheduled_on": "2025-08-23",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0606098",
+    "account": "****4716",
+    "holder": "Revathi Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0044",
+    "student_id": "S02",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0325127",
+    "account": "****9779",
+    "holder": "Rahul Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0048",
+    "student_id": "S06",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0423466",
+    "account": "****5744",
+    "holder": "Arjun Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0052",
+    "student_id": "S10",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0619167",
+    "account": "****3945",
+    "holder": "Rohan Naidu",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0056",
+    "student_id": "S14",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0168157",
+    "account": "****8474",
+    "holder": "Aditya Gowda",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0060",
+    "student_id": "S18",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0676129",
+    "account": "****7405",
+    "holder": "Manoj Nair",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0064",
+    "student_id": "S22",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0693851",
+    "account": "****1067",
+    "holder": "Santosh Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0068",
+    "student_id": "S26",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0258612",
+    "account": "****2801",
+    "holder": "Naveen Sharma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0072",
+    "student_id": "S30",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0601871",
+    "account": "****2407",
+    "holder": "Ravi Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0076",
+    "student_id": "S34",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0950931",
+    "account": "****9873",
+    "holder": "Sai Iyer",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0080",
+    "student_id": "S38",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0207119",
+    "account": "****8327",
+    "holder": "Nikhil Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0084",
+    "student_id": "S42",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-20",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0448669",
+    "account": "****3924",
+    "holder": "Varun Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0045",
+    "student_id": "S03",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0195119",
+    "account": "****1614",
+    "holder": "Divya Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0049",
+    "student_id": "S07",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0846702",
+    "account": "****3961",
+    "holder": "Pooja Shetty",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0053",
+    "student_id": "S11",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0636800",
+    "account": "****6627",
+    "holder": "Kavya Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0057",
+    "student_id": "S15",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0801133",
+    "account": "****1994",
+    "holder": "Nandini Hegde",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0061",
+    "student_id": "S19",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0476198",
+    "account": "****5552",
+    "holder": "Swathi Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0065",
+    "student_id": "S23",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0936630",
+    "account": "****6220",
+    "holder": "Ayesha Verma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 7,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0069",
+    "student_id": "S27",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0318054",
+    "account": "****9791",
+    "holder": "Shruti Menon",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0073",
+    "student_id": "S31",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0253723",
+    "account": "****3645",
+    "holder": "Keerthi Reddy",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0077",
+    "student_id": "S35",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0309629",
+    "account": "****4197",
+    "holder": "Lavanya Pillai",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0081",
+    "student_id": "S39",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0606098",
+    "account": "****4716",
+    "holder": "Revathi Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0085",
+    "student_id": "S43",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-21",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0879461",
+    "account": "****2421",
+    "holder": "Hema Shetty",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0046",
+    "student_id": "S04",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0711316",
+    "account": "****7955",
+    "holder": "Karthik Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0050",
+    "student_id": "S08",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0548363",
+    "account": "****2028",
+    "holder": "Vikram Sharma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0054",
+    "student_id": "S12",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0141111",
+    "account": "****7850",
+    "holder": "Ramachandra Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Account is in the father's name (Ramachandra); verified with the college ID and a letter from the parent. OK to release.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0058",
+    "student_id": "S16",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0222783",
+    "account": "****6685",
+    "holder": "Harish Iyer",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0062",
+    "student_id": "S20",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0343224",
+    "account": "****7233",
+    "holder": "Irfan Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0066",
+    "student_id": "S24",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0765100",
+    "account": "****7428",
+    "holder": "Ganesh Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0070",
+    "student_id": "S28",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0597183",
+    "account": "****7164",
+    "holder": "Tejas Naidu",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0074",
+    "student_id": "S32",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0195431",
+    "account": "****9899",
+    "holder": "Ajay Gowda",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0078",
+    "student_id": "S36",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0129294",
+    "account": "****9480",
+    "holder": "Pradeep Nair",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0082",
+    "student_id": "S40",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0188896",
+    "account": "****1031",
+    "holder": "Imran Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0086",
+    "student_id": "S47",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-22",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0207764",
+    "account": "****3146",
+    "holder": "Chaitra Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 7,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0043",
+    "student_id": "S01",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0961168",
+    "account": "****6305",
+    "holder": "Anjali Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0047",
+    "student_id": "S05",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0239643",
+    "account": "****2013",
+    "holder": "Sneha Verma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Transfer failed: account closed. Asked the student for updated bank details.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "FAILED",
+      "reason": "Account closed at beneficiary bank"
+    }
+  },
+  {
+    "id": "P0051",
+    "student_id": "S09",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0932967",
+    "account": "****6146",
+    "holder": "Lakshmi Menon",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0055",
+    "student_id": "S13",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0620801",
+    "account": "****2271",
+    "holder": "Meghana Reddy",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0059",
+    "student_id": "S17",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0517225",
+    "account": "****9088",
+    "holder": "Priyanka Pillai",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0063",
+    "student_id": "S21",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0395625",
+    "account": "****4822",
+    "holder": "Deepa Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0067",
+    "student_id": "S25",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 20000,
+    "year": 1,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0270187",
+    "account": "****7560",
+    "holder": "Bhavana Shetty",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0071",
+    "student_id": "S29",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0427000",
+    "account": "****3012",
+    "holder": "Fathima Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0075",
+    "student_id": "S33",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0658463",
+    "account": "****5278",
+    "holder": "Madhuri Hegde",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0079",
+    "student_id": "S37",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0461004",
+    "account": "****5577",
+    "holder": "Asha Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0083",
+    "student_id": "S41",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 25000,
+    "year": 1,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0601253",
+    "account": "****2964",
+    "holder": "Sowmya Verma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0087",
+    "student_id": "S48",
+    "cycle": "C2",
+    "scheduled_on": "2026-01-23",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0966286",
+    "account": "****9627",
+    "holder": "Mohan Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0090",
+    "student_id": "S03",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0195119",
+    "account": "****1614",
+    "holder": "Divya Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0093",
+    "student_id": "S06",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0423466",
+    "account": "****5744",
+    "holder": "Arjun Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0102",
+    "student_id": "S15",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0801133",
+    "account": "****1994",
+    "holder": "Nandini Hegde",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0105",
+    "student_id": "S18",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0676129",
+    "account": "****7405",
+    "holder": "Manoj Nair",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 9,
+      "result": "CREDITED",
+      "reason": "Held by the bank for a KYC refresh"
+    }
+  },
+  {
+    "id": "P0108",
+    "student_id": "S21",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0395625",
+    "account": "****4822",
+    "holder": "Deepa Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0111",
+    "student_id": "S24",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0765100",
+    "account": "****7428",
+    "holder": "Ganesh Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0114",
+    "student_id": "S27",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0318054",
+    "account": "****9791",
+    "holder": "Shruti Menon",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "RETURNED",
+      "reason": "Beneficiary name mismatch at the receiving bank"
+    }
+  },
+  {
+    "id": "P0117",
+    "student_id": "S30",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0601871",
+    "account": "****2407",
+    "holder": "Ravi Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0126",
+    "student_id": "S39",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0606098",
+    "account": "****4716",
+    "holder": "Revathi Patil",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0129",
+    "student_id": "S42",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0448669",
+    "account": "****3924",
+    "holder": "Varun Das",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0132",
+    "student_id": "S45",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0253274",
+    "account": "****3476",
+    "holder": "Ramya Menon",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0135",
+    "student_id": "S48",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-16",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0966286",
+    "account": "****9627",
+    "holder": "Mohan Joshi",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0088",
+    "student_id": "S01",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0961168",
+    "account": "****6305",
+    "holder": "Anjali Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0091",
+    "student_id": "S04",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0711316",
+    "account": "****7955",
+    "holder": "Karthik Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0097",
+    "student_id": "S10",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0619167",
+    "account": "****3945",
+    "holder": "Rohan Naidu",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0100",
+    "student_id": "S13",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0620801",
+    "account": "****2271",
+    "holder": "Meghana Reddy",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0103",
+    "student_id": "S16",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0222783",
+    "account": "****6685",
+    "holder": "Harish Iyer",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0106",
+    "student_id": "S19",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0476198",
+    "account": "****5552",
+    "holder": "Swathi Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0109",
+    "student_id": "S22",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0693851",
+    "account": "****1067",
+    "holder": "Santosh Rao",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0112",
+    "student_id": "S25",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0270187",
+    "account": "****7560",
+    "holder": "Bhavana Shetty",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0115",
+    "student_id": "S28",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0597183",
+    "account": "****7164",
+    "holder": "Tejas Naidu",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0118",
+    "student_id": "S31",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0253723",
+    "account": "****3645",
+    "holder": "Keerthi Reddy",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "FAILED",
+      "reason": "Invalid IFSC code"
+    }
+  },
+  {
+    "id": "P0121",
+    "student_id": "S34",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 25000,
+    "year": 4,
+    "annual_entitlement": 50000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0950931",
+    "account": "****9873",
+    "holder": "Sai Iyer",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0124",
+    "student_id": "S37",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0461004",
+    "account": "****5577",
+    "holder": "Asha Kulkarni",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0130",
+    "student_id": "S43",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0879461",
+    "account": "****2421",
+    "holder": "Hema Shetty",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0133",
+    "student_id": "S46",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-17",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0674919",
+    "account": "****8771",
+    "holder": "Abhishek Naidu",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": true,
+      "note": "First payout: account verified by Rs.1 penny-drop test before release."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0095",
+    "student_id": "S08",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Union Bank of India",
+    "ifsc": "UBIN0548363",
+    "account": "****2028",
+    "holder": "Vikram Sharma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0098",
+    "student_id": "S11",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0636800",
+    "account": "****6627",
+    "holder": "Kavya Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0104",
+    "student_id": "S17",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0517225",
+    "account": "****9088",
+    "holder": "Priyanka Pillai",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0107",
+    "student_id": "S20",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0343224",
+    "account": "****7233",
+    "holder": "Irfan Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0113",
+    "student_id": "S26",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0258612",
+    "account": "****2801",
+    "holder": "Naveen Sharma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0116",
+    "student_id": "S29",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0427000",
+    "account": "****3012",
+    "holder": "Fathima Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0119",
+    "student_id": "S32",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 25000,
+    "year": 4,
+    "annual_entitlement": 50000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0195431",
+    "account": "****9899",
+    "holder": "Ajay Gowda",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0122",
+    "student_id": "S35",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0309629",
+    "account": "****4197",
+    "holder": "Lavanya Pillai",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0125",
+    "student_id": "S38",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0207119",
+    "account": "****8327",
+    "holder": "Nikhil Yadav",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0128",
+    "student_id": "S41",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0601253",
+    "account": "****2964",
+    "holder": "Sowmya Verma",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0134",
+    "student_id": "S47",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-18",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0207764",
+    "account": "****3146",
+    "holder": "Chaitra Khan",
+    "request_note": "",
+    "live": false,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0089",
+    "student_id": "S02",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 22500,
+    "year": 4,
+    "annual_entitlement": 45000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0325127",
+    "account": "****9779",
+    "holder": "Rahul Yadav",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0092",
+    "student_id": "S05",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0239643",
+    "account": "****2013",
+    "holder": "Sneha Verma",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "HOLD",
+      "verify": false,
+      "note": "Last transfer bounced (account closed). Need new bank details."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0094",
+    "student_id": "S07",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0417731",
+    "account": "****5520",
+    "holder": "Pooja Shetty",
+    "request_note": "Please send the scholarship to my new account, the old one is not working. Urgent, fees due tomorrow.",
+    "live": true,
+    "_truth": {
+      "outcome": "ESCALATE",
+      "verify": false,
+      "note": "Unverified bank change with urgency. Call the student on the number on file before paying."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0096",
+    "student_id": "S09",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0005521",
+    "account": "****8830",
+    "holder": "Lakshmi Menon",
+    "request_note": "Changed bank after moving to the college hostel. New passbook attached.",
+    "live": true,
+    "_truth": {
+      "outcome": "RELEASE",
+      "verify": false,
+      "note": "New account already verified on 10 Sep."
+    },
+    "_txn": {
+      "days": 4,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0099",
+    "student_id": "S12",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 20000,
+    "year": 2,
+    "annual_entitlement": 40000,
+    "bank": "Canara Bank",
+    "ifsc": "CNRB0141111",
+    "account": "****7850",
+    "holder": "Ramachandra Joshi",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Account is in the father's name (Ramachandra); verified with the college ID and a letter from the parent. OK to release.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0101",
+    "student_id": "S14",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 47000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0168157",
+    "account": "****8474",
+    "holder": "Aditya Gowda",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "HOLD",
+      "verify": false,
+      "note": "Amount exceeds the annual entitlement. Correct the instalment."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0110",
+    "student_id": "S23",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "Konkan Co-op Bank",
+    "ifsc": "KKCB0936630",
+    "account": "****6220",
+    "holder": "Ayesha Verma",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 6,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0120",
+    "student_id": "S33",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0395625",
+    "account": "****4822",
+    "holder": "Madhuri Hegde",
+    "request_note": "Updated bank details submitted through the college office.",
+    "live": true,
+    "_truth": {
+      "outcome": "ESCALATE",
+      "verify": false,
+      "note": "Same account as Deepa Patil (S21). Possible middleman; verify both students."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0123",
+    "student_id": "S36",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 25000,
+    "year": 3,
+    "annual_entitlement": 50000,
+    "bank": "HDFC Bank",
+    "ifsc": "HDFC0129294",
+    "account": "****9480",
+    "holder": "Pradeep Nair",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "RELEASE",
+      "note": "Within entitlement; account on record.",
+      "verify": false
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0127",
+    "student_id": "S40",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 25000,
+    "year": 4,
+    "annual_entitlement": 50000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0188896",
+    "account": "****1031",
+    "holder": "Imran Rao",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "HOLD",
+      "verify": false,
+      "note": "Student discontinued in Aug 2026. Stop payment."
+    },
+    "_txn": {
+      "days": 1,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P0131",
+    "student_id": "S44",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 25000,
+    "year": 2,
+    "annual_entitlement": 50000,
+    "bank": "India Post Payments Bank",
+    "ifsc": "IPOS0128887",
+    "account": "****2391",
+    "holder": "Kiran Sharma",
+    "request_note": "",
+    "live": true,
+    "_truth": {
+      "outcome": "HOLD",
+      "verify": false,
+      "note": "First payout; run the penny-drop test first."
+    },
+    "_txn": {
+      "days": 3,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  },
+  {
+    "id": "P9001",
+    "student_id": "S15",
+    "cycle": "C3",
+    "scheduled_on": "2026-09-22",
+    "amount": 21000,
+    "year": 3,
+    "annual_entitlement": 42000,
+    "bank": "State Bank of India",
+    "ifsc": "SBIN0801133",
+    "account": "****1994",
+    "holder": "Nandini Hegde",
+    "request_note": "Re-uploaded from the college batch file.",
+    "live": true,
+    "_truth": {
+      "outcome": "ESCALATE",
+      "verify": false,
+      "note": "Duplicate of this cycle's payout already released."
+    },
+    "_txn": {
+      "days": 2,
+      "result": "CREDITED",
+      "reason": ""
+    }
+  }
+]

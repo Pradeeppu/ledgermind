@@ -120,11 +120,66 @@ def main() -> None:
           "Notes: Memory ON is deliberately conservative early on (cold-start rule: fewer than 3 prior invoices means "
           "a human reviews). That costs accuracy in period 1 but is why it makes zero false auto-approvals. "
           "Accuracy counts an exact outcome match, so a FLAG on a clean invoice counts as wrong even though it is safe."]
+    L += csr_section()
     out = ROOT / "docs" / "EVALUATION.md"
     out.write_text("\n".join(L) + "\n", encoding="utf-8")
     print("\n".join(L))
     # leave the app in demo state (history replayed, live invoices pending)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "replay.py"), "--reset"], check=True, capture_output=True)
+
+
+def csr_section() -> list[str]:
+    """Scholarship payouts: memory ON vs OFF on the live cycle, the online replay, and transfer tracking."""
+    from ledgermind.csr import agent as ca, service as cs, store as cst
+
+    pays = cst.payouts()
+    live = sorted((p for p in pays.values() if p["live"]), key=lambda p: p["student_id"])
+    studs = cst.students()
+    rows, on_pairs, off_pairs = [], [], []
+    for p in live:
+        on = ca.decide(p["id"], memory_on=True, persist=False)
+        off = ca.decide(p["id"], memory_on=False, persist=False)
+        t = p["_truth"]["outcome"]
+        on_pairs.append((on["outcome"], t))
+        off_pairs.append((off["outcome"], t))
+        saw = ", ".join(f["code"].replace("_", " ").title() for f in on["risk_flags"]) or (
+            "Cleared by memory: " + ("verified account change" if "verified" in on["learned_from"][0] else "learned exception")
+            if on["learned_from"] else "Clean")
+        rows.append(f"| {studs[p['student_id']]['name']} | {saw} "
+                    f"| {t.title()} | {off['outcome'].title()} | {on['outcome'].title()} | {'PASS' if on['outcome'] == t else 'FAIL'} |")
+
+    def sc(pairs):
+        n = len(pairs)
+        risky = [x for x in pairs if x[1] != "RELEASE"]
+        return (sum(a == b for a, b in pairs) / n, sum(a != "RELEASE" for a, _ in risky) / len(risky),
+                sum(a == "RELEASE" and b != "RELEASE" for a, b in pairs), len(risky))
+
+    a_on, r_on, f_on, nr = sc(on_pairs)
+    a_off, r_off, f_off, _ = sc(off_pairs)
+    firsts = cst.first_decisions()
+    hist = [(d["outcome"], pays[i]["_truth"]["outcome"]) for i, d in firsts.items() if i in pays]
+    wrong = sum(a == "RELEASE" and b != "RELEASE" for a, b in hist)
+    by_cycle = {}
+    for i, d in firsts.items():
+        c = pays[i]["cycle"]
+        n, auto = by_cycle.get(c, (0, 0))
+        by_cycle[c] = (n + 1, auto + (d["outcome"] == "RELEASE"))
+    naive = sum(1 for t in cs.list_transactions(memory_on=False) if t["status"] == "DELAYED")
+    learned = sum(1 for t in cs.list_transactions(memory_on=True) if t["status"] == "DELAYED")
+    L = ["", "## CSR scholarship payouts", "",
+         "A synthetic foundation funded by 3 CSR donors, with 48 students and 136 payouts over three instalment cycles "
+         "(engineering Rs.40-45k a year, medicine Rs.50k a year). Payouts in cycles 1-2, plus the first batch of cycle 3, "
+         "are replayed with a simulated accountant and a simulated bank. The 12 remaining cycle-3 payouts are the live test.", "",
+         "| Metric | Memory OFF | Memory ON |", "|---|---|---|",
+         f"| Live payouts decided correctly (n={len(live)}) | {pct(a_off)} | **{pct(a_on)}** |",
+         f"| Risky payouts stopped (n={nr}) | {pct(r_off)} | **{pct(r_on)}** |",
+         f"| Risky payouts wrongly released | {f_off} | **{f_on}** |",
+         f"| Transfers flagged as delayed at the demo date | {naive} (naive 3-day SLA) | **{learned}** (learned per-bank timing) |",
+         "", "| Student | What memory saw | Expected | Memory OFF | Memory ON | Result |", "|---|---|---|---|---|---|", *rows,
+         "", f"Online replay: {len(hist)} historical payouts, **{wrong} wrong auto-releases**. Auto-release rate by cycle: "
+         + ", ".join(f"{cst.cycles()[c]['label']} {auto / n:.0%}" for c, (n, auto) in sorted(by_cycle.items()))
+         + ". Cycle 1 is every student's first payout, so each one needs a penny-drop check."]
+    return L
 
 
 if __name__ == "__main__":

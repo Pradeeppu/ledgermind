@@ -18,6 +18,7 @@ if str(ROOT) not in sys.path:
 import streamlit as st  # noqa: E402
 
 from ui.backend import svc, USING_MOCK, FALLBACK_REASON  # noqa: E402,F401
+from ui.backend import csr, CSR_USING_MOCK, CSR_FALLBACK_REASON  # noqa: E402,F401
 from ui.icons import svg  # noqa: E402
 
 # outcome -> (material icon, label, colour); icon and label always travel together (never colour alone)
@@ -30,6 +31,25 @@ OUTCOME_SVG = {"APPROVE": "check-circle", "FLAG": "alert-triangle", "ESCALATE": 
 STATUS_LABEL = {"PENDING": "Pending", "APPROVED": "Approved", "FLAGGED": "Flagged", "ESCALATED": "Escalated"}
 STATUS_SVG = {"PENDING": "clock", "APPROVED": "check-circle", "FLAGGED": "alert-triangle", "ESCALATED": "octagon-alert"}
 STATUS_TO_OUTCOME = {"APPROVED": "APPROVE", "FLAGGED": "FLAG", "ESCALATED": "ESCALATE"}
+# CSR payout outcomes share the AP colour / icon language: green release, amber hold, red escalate
+PAYOUT_META = {
+    "RELEASE": (":material/check_circle:", "Release", "#0ca30c"),
+    "HOLD": (":material/warning:", "Hold", "#fab219"),
+    "ESCALATE": (":material/gpp_bad:", "Escalate", "#d03b3b"),
+}
+PAYOUT_SVG = {"RELEASE": "check-circle", "HOLD": "alert-triangle", "ESCALATE": "octagon-alert"}
+PAYOUT_STATUS_LABEL = {"PENDING": "Pending", "RELEASED": "Released", "ON_HOLD": "On hold", "ESCALATED": "Escalated"}
+PAYOUT_STATUS_SVG = {"PENDING": "clock", "RELEASED": "check-circle", "ON_HOLD": "alert-triangle",
+                     "ESCALATED": "octagon-alert"}
+TXN_LABEL = {"IN_TRANSIT": "In transit", "CREDITED": "Credited", "DELAYED": "Delayed", "FAILED": "Failed",
+             "RETURNED": "Returned"}
+TXN_SVG = {"IN_TRANSIT": "send", "CREDITED": "check-circle", "DELAYED": "clock", "FAILED": "x-circle",
+           "RETURNED": "undo"}
+# text colours for dataframe cells (labels, never colour alone)
+CSR_TONE = {"Released": "#0B6B1F", "Release": "#0B6B1F", "Credited": "#0B6B1F", "Verified": "#0B6B1F",
+            "On hold": "#8A5A00", "Hold": "#8A5A00", "Delayed": "#8A5A00", "Unverified": "#8A5A00", "New": "#8A5A00",
+            "Escalated": "#9B1C1C", "Escalate": "#9B1C1C", "Failed": "#9B1C1C", "Returned": "#9B1C1C",
+            "Dropped out": "#9B1C1C", "Discontinued": "#9B1C1C", "In transit": "#3730A3", "Pending": "#334155", "Active": "#0B6B1F"}
 MEM_META = {"world": ("book-open", "Fact"), "experience": ("history", "Experience"), "observation": ("layers", "Observation")}
 
 MI = {  # Material Symbols used by native widgets
@@ -39,12 +59,19 @@ MI = {  # Material Symbols used by native widgets
     "confirm": ":material/verified:", "retire": ":material/archive:", "restore": ":material/unarchive:",
     "clear": ":material/delete_sweep:", "compare": ":material/compare_arrows:", "bank": ":material/account_balance:",
     "lock": ":material/lock:", "save": ":material/save:", "reset": ":material/restart_alt:",
+    "verify": ":material/verified_user:", "clock": ":material/schedule:", "download": ":material/download:",
+    "queue": ":material/assignment_ind:", "payments": ":material/payments:",
 }
 
 USERS = {
     "Priya R.": {"role": "AP Clerk", "can_decide": True, "can_manage": False},
     "Rakesh M.": {"role": "AP Manager", "can_decide": True, "can_manage": True},
     "Anita D.": {"role": "Internal Auditor", "can_decide": False, "can_manage": False},
+    "Meera K.": {"role": "Foundation Accountant", "can_decide": True, "can_manage": False,
+                 "org": "Shiksha Setu Foundation"},
+    # read-only donor view: CSR pages lock her to her own company's donor trail
+    "Kavya S.": {"role": "CSR Head, Nimbus Softech", "can_decide": False, "can_manage": False,
+                 "org": "Donor view", "donor": "Nimbus Softech CSR"},
 }
 
 
@@ -114,7 +141,7 @@ def status_chip(status: str) -> str:
 
 def kpi(col, label: str, value, hint: str = "", accent: bool = False, icon: str | None = None, tone: str = ""):
     ico = f'<span class="ico {esc(tone)}">{svg(icon, 16)}</span>' if icon else ""
-    size = " sm" if len(str(value)) > 11 else ""
+    size = " sm" if len(str(value)) > 11 or (str(value).startswith("₹") and len(str(value)) > 8) else ""
     col.markdown(f'<div class="lm-kpi{" accent" if accent else ""}"><div class="lbl">{ico}{esc(label)}</div>'
                  f'<div class="val{size}">{esc(value)}</div><div class="hint">{esc(hint)}</div></div>',
                  unsafe_allow_html=True)
@@ -146,10 +173,15 @@ def flags_html(flags: list[dict]) -> str:
     return "".join(out)
 
 
-def decision_card(d: dict, show_mode: bool = True, compact: bool = False):
-    """Decision card: colour + icon + text label (never colour alone)."""
+def decision_card(d: dict, show_mode: bool = True, compact: bool = False, meta: dict | None = None,
+                  svg_map: dict | None = None):
+    """Decision card: colour + icon + text label (never colour alone).
+
+    meta / svg_map default to the AP outcomes; the CSR pages pass PAYOUT_META / PAYOUT_SVG (see payout_card)."""
+    meta = meta or OUTCOME_META
+    svg_map = svg_map or OUTCOME_SVG
     outcome = d.get("outcome", "FLAG")
-    _, label, color = OUTCOME_META.get(outcome, ("", outcome, "#6B7280"))
+    _, label, color = meta.get(outcome, ("", outcome, "#6B7280"))
     mode = d.get("memory_mode", "on")
     mode_txt = {"on": "Memory on", "off": "Memory off", "unavailable": "Memory unavailable"}.get(mode, mode)
     learned = "".join(f'<div class="lm-learned">{svg("lightbulb", 15)}<span>{esc(x)}</span></div>'
@@ -158,7 +190,7 @@ def decision_card(d: dict, show_mode: bool = True, compact: bool = False):
     body = (f'<div class="lm-decision {esc(outcome)}">'
             + (f'<div class="mode">{svg("database" if mode == "on" else "power-off", 13)}{esc(mode_txt)} · agent recommendation</div>'
                if show_mode else "")
-            + f'<div class="badge">{svg(OUTCOME_SVG.get(outcome, "circle-dot"), 30, 2.2)}<span>{esc(label)}</span></div>'
+            + f'<div class="badge">{svg(svg_map.get(outcome, "circle-dot"), 30, 2.2)}<span>{esc(label)}</span></div>'
             + confidence_meter(d.get("confidence"), color)
             + f'<div class="rat">{esc(d.get("rationale", ""))}</div>'
             + f'<div class="lm-sect">Risk checks <span class="lm-count">{len(flags)}</span></div>' + flags_html(flags)
@@ -167,6 +199,42 @@ def decision_card(d: dict, show_mode: bool = True, compact: bool = False):
                f'{esc(d.get("decided_at", ""))}</div>' if not compact else "")
             + '</div>')
     st.markdown(body, unsafe_allow_html=True)
+
+
+def payout_card(d: dict, show_mode: bool = True, compact: bool = False):
+    """Payout decision card (Release / Hold / Escalate)."""
+    decision_card(d, show_mode=show_mode, compact=compact, meta=PAYOUT_META, svg_map=PAYOUT_SVG)
+
+
+def payout_chip(outcome: str | None) -> str:
+    if not outcome:
+        return chip("Not decided", "PENDING", "clock")
+    return chip(PAYOUT_META.get(outcome, ("", outcome, ""))[1], outcome, PAYOUT_SVG.get(outcome))
+
+
+def payout_status_chip(status: str) -> str:
+    return chip(PAYOUT_STATUS_LABEL.get(status, status), status, PAYOUT_STATUS_SVG.get(status))
+
+
+def txn_chip(status: str | None) -> str:
+    if not status:
+        return chip("Not sent", "PENDING", "clock")
+    return chip(TXN_LABEL.get(status, status), status, TXN_SVG.get(status))
+
+
+def payout_label(row: dict) -> str:
+    return (f'{row["student_name"]} · {row["cycle_label"]} · {inr(row["amount"])} · '
+            f'{PAYOUT_STATUS_LABEL.get(row["status"], row["status"])} · {row["id"]}')
+
+
+def goto_page(page: str, **state):
+    """Set session_state keys, then switch page (falls back to a rerun when run standalone in tests)."""
+    for k, v in state.items():
+        st.session_state[k] = v
+    try:
+        st.switch_page(page)
+    except Exception:  # noqa: BLE001
+        st.rerun()
 
 
 def memories_html(mems: list[dict]) -> str:

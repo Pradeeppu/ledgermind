@@ -23,6 +23,7 @@ BANK_ID = os.getenv("LEDGERMIND_BANK_ID", "ap-ledgermind-acme")
 AUTO_APPROVE_CONFIDENCE = float(os.getenv("AUTO_APPROVE_CONFIDENCE", "0.85"))
 PRICE_CREEP_BAND_PCT = float(os.getenv("PRICE_CREEP_BAND_PCT", "3.0"))
 HIGH_VALUE_LIMIT = float(os.getenv("HIGH_VALUE_LIMIT", "500000"))
+DEMO_LIVE_FROM = os.getenv("DEMO_LIVE_FROM", "2026-09-15")  # invoices on/after this are the live demo set
 COLD_START_MIN_INVOICES = int(os.getenv("COLD_START_MIN_INVOICES", "3"))
 TOLERANCE_PCT = float(os.getenv("MATCH_TOLERANCE_PCT", "0.5"))  # rounding tolerance for a "perfect" match
 

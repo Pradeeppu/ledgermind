@@ -248,7 +248,7 @@ def act(d: Director, sid: str, budget: float):
         d.scroll(300, total=1.5)
     elif sid == "10_close":
         time.sleep(1.5)
-        d.move(p.get_by_role("link", name="Learning curve"), pause=1.5)
+        d.move(p.get_by_role("link", name="Invoice queue"), pause=1.5)
         d.move(p.locator(".lm-status").first, pause=2.0)
 
 

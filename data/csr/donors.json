@@ -1,0 +1,17 @@
+[
+  {
+    "id": "D1",
+    "name": "Acme Components CSR",
+    "contact": "csr@acme-components.example"
+  },
+  {
+    "id": "D2",
+    "name": "Nimbus Softech CSR",
+    "contact": "csr@nimbus-softech.example"
+  },
+  {
+    "id": "D3",
+    "name": "Sahyadri Steels CSR",
+    "contact": "csr@sahyadri-steels.example"
+  }
+]

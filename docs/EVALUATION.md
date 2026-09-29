@@ -20,7 +20,7 @@ Memory backend during this run: **local**.
 | Risky caught | 40.0% | **100.0%** |
 | False auto-approvals | 3 | **0** |
 | Clean invoices auto-approved | 50.0% | 100.0% |
-| Avg decision latency (memory ON, this backend) | | 6 ms |
+| Avg decision latency (memory ON, this backend) | | 8 ms |
 
 ## Planted cases
 
@@ -57,3 +57,31 @@ Memory backend during this run: **local**.
 | False auto-approvals | 8 | 0 |
 
 Notes: Memory ON is deliberately conservative early on (cold-start rule: fewer than 3 prior invoices means a human reviews). That costs accuracy in period 1 but is why it makes zero false auto-approvals. Accuracy counts an exact outcome match, so a FLAG on a clean invoice counts as wrong even though it is safe.
+
+## CSR scholarship payouts
+
+A synthetic foundation funded by 3 CSR donors, with 48 students and 136 payouts over three instalment cycles (engineering Rs.40-45k a year, medicine Rs.50k a year). Payouts in cycles 1-2, plus the first batch of cycle 3, are replayed with a simulated accountant and a simulated bank. The 12 remaining cycle-3 payouts are the live test.
+
+| Metric | Memory OFF | Memory ON |
+|---|---|---|
+| Live payouts decided correctly (n=12) | 50.0% | **100.0%** |
+| Risky payouts stopped (n=7) | 28.6% | **100.0%** |
+| Risky payouts wrongly released | 5 | **0** |
+| Transfers flagged as delayed at the demo date | 4 (naive 3-day SLA) | **1** (learned per-bank timing) |
+
+| Student | What memory saw | Expected | Memory OFF | Memory ON | Result |
+|---|---|---|---|---|---|
+| Rahul Yadav | Clean | Release | Release | Release | PASS |
+| Sneha Verma | Previous Failure | Hold | Release | Hold | PASS |
+| Pooja Shetty | Bank Change | Escalate | Release | Escalate | PASS |
+| Lakshmi Menon | Clean | Release | Release | Release | PASS |
+| Suresh Joshi | Clean | Release | Hold | Release | PASS |
+| Aditya Gowda | Over Entitlement | Hold | Hold | Hold | PASS |
+| Nandini Hegde | Duplicate Payout | Escalate | Release | Escalate | PASS |
+| Ayesha Verma | Clean | Release | Release | Release | PASS |
+| Madhuri Hegde | Shared Account, Bank Change | Escalate | Release | Escalate | PASS |
+| Pradeep Nair | Clean | Release | Release | Release | PASS |
+| Imran Rao | Ineligible | Hold | Hold | Hold | PASS |
+| Kiran Sharma | First Payout | Hold | Release | Hold | PASS |
+
+Online replay: 124 historical payouts, **0 wrong auto-releases**. Auto-release rate by cycle: 2025-26 · Instalment 1 0%, 2025-26 · Instalment 2 89%, 2026-27 · Instalment 1 95%. Cycle 1 is every student's first payout, so each one needs a penny-drop check.
