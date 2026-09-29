@@ -1,0 +1,92 @@
+[
+  {
+    "id": "V01",
+    "name": "Sharma Logistics Pvt Ltd",
+    "category": "Freight",
+    "gstin": "27AACA1000K1Z0",
+    "payment_terms": "net-45",
+    "bank_account": "****6620",
+    "contact_phone": "+91 9800 4400"
+  },
+  {
+    "id": "V02",
+    "name": "Apex Steel Industries",
+    "category": "Raw material",
+    "gstin": "27AACB1037L1Z1",
+    "payment_terms": "net-60",
+    "bank_account": "****3381",
+    "contact_phone": "+91 9810 4511"
+  },
+  {
+    "id": "V03",
+    "name": "BrightPack Solutions",
+    "category": "Packaging",
+    "gstin": "27AACC1074M1Z2",
+    "payment_terms": "net-30",
+    "bank_account": "****7154",
+    "contact_phone": "+91 9820 4622"
+  },
+  {
+    "id": "V04",
+    "name": "Krishna Electricals",
+    "category": "Electrical",
+    "gstin": "27AACD1111N1Z3",
+    "payment_terms": "net-30",
+    "bank_account": "****4417",
+    "contact_phone": "+91 9830 4733"
+  },
+  {
+    "id": "V05",
+    "name": "Nova Office Supplies",
+    "category": "Stationery",
+    "gstin": "27AACE1148O1Z4",
+    "payment_terms": "net-30",
+    "bank_account": "****2290",
+    "contact_phone": "+91 9840 4844"
+  },
+  {
+    "id": "V06",
+    "name": "Vertex IT Services",
+    "category": "SaaS (non-PO)",
+    "gstin": "27AACF1185P1Z5",
+    "payment_terms": "net-15",
+    "bank_account": "****8812",
+    "contact_phone": "+91 9850 4955"
+  },
+  {
+    "id": "V07",
+    "name": "GreenLeaf Chemicals",
+    "category": "Chemicals",
+    "gstin": "27AACG1222Q1Z6",
+    "payment_terms": "net-45",
+    "bank_account": "****5076",
+    "contact_phone": "+91 9860 5066"
+  },
+  {
+    "id": "V08",
+    "name": "Metro Facility Services",
+    "category": "Housekeeping",
+    "gstin": "27AACH1259R1Z7",
+    "payment_terms": "net-30",
+    "bank_account": "****1938",
+    "contact_phone": "+91 9870 5177"
+  },
+  {
+    "id": "V09",
+    "name": "Orion Tools & Hardware",
+    "category": "MRO",
+    "gstin": "27AACI1296S1Z8",
+    "payment_terms": "net-30",
+    "bank_account": "****6405",
+    "contact_phone": "+91 9880 5288"
+  },
+  {
+    "id": "V10",
+    "name": "Delta Freight Carriers",
+    "category": "Freight",
+    "gstin": "27AACJ1333T1Z9",
+    "payment_terms": "net-30",
+    "bank_account": "****9127",
+    "contact_phone": "+91 9890 5399"
+  }
+]

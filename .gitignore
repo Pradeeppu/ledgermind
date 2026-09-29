@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+data/ledgermind.db
+data/local_memory.json
+.venv/
+video/
+.pytest_cache/
